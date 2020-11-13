@@ -1,0 +1,170 @@
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+% Medium Length Professional CV
+% LaTeX Template
+% Version 2.0 (8/5/13)
+%
+% This template has been downloaded from:
+% http://www.LaTeXTemplates.com
+%
+% Original author:
+% Trey Hunner (http://www.treyhunner.com/)
+%
+% Important note:
+% This template requires the resume.cls file to be in the same directory as the
+% .tex file. The resume.cls file provides the resume style used for structuring the
+% document.
+%
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+
+%----------------------------------------------------------------------------------------
+%	PACKAGES AND OTHER DOCUMENT CONFIGURATIONS
+%----------------------------------------------------------------------------------------
+
+\documentclass{resume} % Use the custom resume.cls style
+
+\usepackage[left=0.75in,top=0.7in,right=0.75in,bottom=0.2in]{geometry} % Document margins
+\usepackage{biblatex}
+\usepackage{hyperref}
+
+
+\name{Yongwei Yuan} % Your name
+\address{\href{mailto:yuan311@purdue.edu}{yuan311@purdue.edu}} % Your address
+\address{\url{https://victoryyw.github.io/}}
+\address{+1 734-881-4100}
+
+\begin{document}
+%----------HEADING-----------------
+% \begin{tabular*}{\textwidth}{l@{\extracolsep{\fill}}r}
+%   \textbf{}{\huge \bf{Yongwei Yuan}} & Email : {yuan311@purdue.edu}\\
+%   {Ph.D. student in computer science} & {Mobile : +1-734-881-4100} \\
+% % {UMID : 26211890} & {} \\
+% \end{tabular*}
+%\begin{document}
+%----------------------------------------------------------------------------------------
+%	EDUCATION SECTION
+%----------------------------------------------------------------------------------------
+
+\begin{rSection}{\large Education}
+  \begin{rSubsection*}
+    {Purdue University, West Lafayette}{Indiana, United States}
+    {Ph.D. in Computer Science}{\textit{Aug. 2020 - now}}
+  \end{rSubsection*}
+
+  \begin{rSubsection*}
+    {University of Michigan, Ann Arbor}{Michigan, United States}
+    {B.S. in Computer Science}{\textit{Sept. 2018 - May. 2020}}
+  \end{rSubsection*}
+
+  \begin{rSubsection*}{Shanghai Jiao Tong University}{Shanghai, China}
+  {B.S. in Electrical and Computer Engineering}{\textit {Sept. 2016 - Aug. 2020}}
+  \end{rSubsection*}
+
+\end{rSection}
+
+%----------------------------------------------------------------------------------------
+%   RESEARCH SECTION
+%----------------------------------------------------------------------------------------
+\begin{rSection}{\large Research}
+ 
+  \begin{rSubsection}
+    {SIS-Lambda}{Advisor: Prof. Roopsha Samanta}
+    {Department of Computer Science, Purdue University}{Aug. 2020 - now}
+  \item To take advantage of relational properties and add semantic bias to
+    exmaple-based synthesis of functional programs
+  \item Found evidence that augmenting user-provided examples could resolve the
+    ambiguity problem in synthesis
+  \item Working on the formalism of example augmentation process through defining a
+    refinement type system
+  \end{rSubsection}
+  \begin{rSubsection}
+    {Pattern Matching with Typed Holes}{Advisor: Prof. Cyrus Omar}
+    {Computer Science and Engineering, University of Michigan}{Jan. 2020 - now}
+  \item To support incomplete structural pattern matching and provide feedback
+    to users in every possible editor state
+  \item Developed a simply typed lambda calculus, Peanut, where reasoning about exhaustiveness
+    and redundancy is mapped to the problem of deriving first-order entailment
+    between constraints
+  \item Developed an operational semantics that allows us to evaluate match
+    expressions in the presence of holes
+  \item Proved key metatheoretic properties and formalized a procedure capable of
+    deciding the necessary entailment
+  \end{rSubsection}
+
+\end{rSection}
+%\vspace{0.5em}
+
+%------------------------------------------------
+%----------------------------------------------------------------------------------------
+%	RESEARCH EXPERIENCE SECTION
+%----------------------------------------------------------------------------------------
+
+\begin{rSection}{\large Projects}
+%------------------------------------------------
+\begin{rSubsection}
+  {Variable Usability in Hazel}{Advisor: Prof. Cyrus Omar}
+  {Computer Science and Engineering, University of Michigan}{Sept. 2019 - Mar. 2020}
+\item To improve the usability of variables in \href{https://hazel.org/build/dev/index.html}{\textsf{Hazel}}, a live functional programming environment featuring typed holes
+\item Added support for static variable usage analysis for both the one under the
+  cursor and other variables
+\item Provided variable-based program navigation 
+\item Designed and Implemented secondary notations to display variable usage information
+\item Exposed hidden dependencies between the binding site and the usage site of
+  variables to programmers
+\end{rSubsection}
+\begin{rSubsection}
+  {Bugbase V2}{Prof. Baris Kasikci}
+  {Computer Science and Engineering, University of Michigan}{Apr. 2019 - Sept. 2019}
+\item To verify the effectiveness of existing symbolic-execution-based bug-finding tools, like KLEE
+\item Reproduced dozens of bugs in docker containers, involving hacking into the codebase and transforming LLVM IR when necessary
+\item Digged into the codebase of large-scale software systems to analyze root
+  cause for multiple bugs
+\end{rSubsection}
+
+\begin{rSubsection}{Review-Me Automation}{Advisor: Prof. Tawanna Dillahunt}
+  {School of Information, University of Michigan}{Jun. 2019 - Oct. 2019}
+\item Provided back-end support for \href{https://review-me.us}{review-me}, a system dedicated to provide expert resume feedback for job seekers
+\item Automated the process of reviewing resumes and providing feedback by taking advantage of crowdsourcing
+\end{rSubsection}
+
+\end{rSection}
+%------------------------------------------------ %\vspace{0.5em}  
+\begin{rSection}{\large Awards}
+Honorable Mention, Mathematical Contest in Modeling \hfill {Apr. 2017}
+
+\end{rSection}
+
+%----------------------------------------------------------------------------------------
+%	TECHNICAL STRENGTHS SECTION
+%----------------------------------------------------------------------------------------
+
+% \begin{rSection}{\large Skills}
+% \begin{tabular}{ @{} >{\bfseries}l @{\hspace{6ex}} l }
+% Programming Languages & ReasonML, OCaml, C/C++, Python, Javascript 
+% \end{tabular}
+% \end{rSection}
+
+%\begin{rSection}{\large Publications\&Patents}
+% Meng Qu$^*$, {\bf Chun Ni}$^*$, Mufan Chen$^*$ \emph{et al}., "Automatic  diabetic  retinopathy  diagnosis  using adjustable  ophthalmoscope  and  multi-scale  line  operator". \underline{\emph{Pervasive and Mobile Computing}}  ($^*$Co-first author)\\
+% Ying Cui, Wen He, {\bf Chun Ni}, Chengjun Guo, and Zhi Liu. "Energy-efficient resource allocation for cache-assisted mobile edge computing". \underline{\emph{IEEE LCN}} \emph{2017}.  \\
+% Bin Sheng, Ling Dai, {\bf Chun Ni}. A Method for Automatically Detecting Micro Aneurysms Based on Multisieving Convolution Neural Network. Patent Pending. 
+%\end{rSection}
+
+
+%%\begin{rSection}{Leadership}
+%%\begin{rSubsection}{Youth Volunteer Team $|$ Director}{}{}
+
+%%\item Organized charity sale for left-behind children. Collected idle stuff and sold them in the campus, finally got 2648RMB.
+%%\item Established and organized a long term volunteer service to assist in rehabilitation of autistic children 
+%%\end{rSubsection}
+%%\begin{rSubsection}{Debate Team of School $|$ Coach}{}{}
+
+%%\item Championship member of University Debate Race, Best Debater
+
+%%\end{rSubsection}
+%%\end{rSection}
+%------------------------------------------------
+
+
+%----------------------------------------------------------------------------------------
+
+\end{document}
